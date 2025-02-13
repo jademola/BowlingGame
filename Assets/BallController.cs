@@ -20,7 +20,7 @@ public class BallController : MonoBehaviour
 
     private void LaunchBall() 
     {
-        ballRB.addForce(transform.forward * force, ForceMode.Impulse);
+        ballRB.AddForce(transform.forward * force, ForceMode.Impulse);
     }
 
     void Update()
