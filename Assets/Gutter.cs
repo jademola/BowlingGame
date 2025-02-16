@@ -18,7 +18,7 @@ public class Gutter : MonoBehaviour
 
     // Now we add force in the forward direction of the gutter
     // We use the cached velocity magnitude to keep it a little realistic
-    ballRigidBody.AddForce(transform.forward * velocityMagnitude, ForceMode.VelocityChange);
+    ballRigidBody.AddForce(-transform.up * velocityMagnitude, ForceMode.VelocityChange);
 }
 
 }

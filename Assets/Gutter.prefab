@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4418428028166909616}
   - component: {fileID: 8689422738748873927}
   - component: {fileID: 609232300099285788}
-  - component: {fileID: 5905492626460117660}
   - component: {fileID: -1070156254349802411}
+  - component: {fileID: 5905492626460117660}
   m_Layer: 0
   m_Name: Gutter
   m_TagString: Untagged
@@ -28,14 +28,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3827542056613194021}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 40, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5939244997913982510}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &8689422738748873927
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -89,6 +89,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-1070156254349802411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827542056613194021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8093a4943983a46a299797f54ca92b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &5905492626460117660
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -110,20 +122,8 @@ CapsuleCollider:
   serializedVersion: 2
   m_Radius: 0.5000001
   m_Height: 80
-  m_Direction: 2
+  m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &-1070156254349802411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3827542056613194021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8093a4943983a46a299797f54ca92b78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7286552859836228047
 GameObject:
   m_ObjectHideFlags: 0
