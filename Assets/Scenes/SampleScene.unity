@@ -356,6 +356,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &102223620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 102223621}
+  m_Layer: 0
+  m_Name: PinAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &102223621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102223620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22, y: 0.2, z: 27.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &109816837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,6 +1495,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1395112102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2817161380823345501, guid: 89e35225611094c7aa3a75084eda682d, type: 3}
+  m_PrefabInstance: {fileID: 7812552451532546819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1432120596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1536,9 @@ MonoBehaviour:
   OnSpacePressed:
     m_PersistentCalls:
       m_Calls: []
+  OnResetPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1432120598
 Transform:
   m_ObjectHideFlags: 0
@@ -1528,6 +1567,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  ball: {fileID: 711430553}
+  pinCollection: {fileID: 1395112102}
+  pinAnchor: {fileID: 102223621}
+  inputManager: {fileID: 1432120597}
   scoreText: {fileID: 1528447284}
 --- !u!1 &1528447282
 GameObject:
@@ -1758,7 +1801,7 @@ Transform:
   m_GameObject: {fileID: 1873496899}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.73, y: 0, z: -0.32}
+  m_LocalPosition: {x: -1.73, y: -0.2, z: -0.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1999,3 +2042,4 @@ SceneRoots:
   - {fileID: 109816839}
   - {fileID: 2022759754}
   - {fileID: 1580538937}
+  - {fileID: 102223621}

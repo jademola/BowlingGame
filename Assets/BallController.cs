@@ -20,7 +20,17 @@ public class BallController : MonoBehaviour
         inputManager.OnSpacePressed.AddListener(LaunchBall);
         transform.parent = ballAnchor;
         transform.localPosition = Vector3.zero;
+        ResetBall();
+    }
+
+    public void ResetBall()
+    {
+        isBallLaunched = false;
+        
         ballRB.isKinematic = true;
+        launchIndicator.gameObject.SetActive(true);
+        transform.parent = ballAnchor;
+        transform.localPosition = Vector3.zero;
     }
 
     private void LaunchBall() 
