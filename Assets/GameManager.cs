@@ -42,6 +42,7 @@ private void SetPins()
         }
 
         pinObjects = Instantiate(pinCollection, pinAnchor.transform.position, Quaternion.identity, transform);
+        pinObjects.transform.rotation = Quaternion.Euler(0, 180, 0);
         fallTriggers = FindObjectsByType<FallTrigger>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
         foreach (FallTrigger pin in fallTriggers)
